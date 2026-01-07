@@ -2,3 +2,4 @@
 .zed
 pswd.txt
 __pycache__
+.env
