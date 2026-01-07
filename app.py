@@ -1,8 +1,8 @@
 from flask import Flask, jsonify
 
 from blueprints.dirfunc import pagerts
-from blueprints.semone import sone
 from blueprints.semfour import semfo
+from blueprints.semone import sone
 
 app = Flask(__name__)
 app.register_blueprint(pagerts)
@@ -14,6 +14,11 @@ app.register_blueprint(semfo)
 @app.route("/index", methods=["GET"])
 def myfunc():
     return jsonify({"Name": ["Arihant Gupta", "Vishnu Chityala"]})
+
+
+@app.route("/details")
+def deets():
+    return jsonify({"Apps": ["Python", "Flask"]})
 
 
 if __name__ == "__main__":
