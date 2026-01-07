@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <title>BU Notes</title>
+        <link
+            href="{{ url_for('static', filename='index.css') }}"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="{{ url_for('static', filename='images/fav.ico') }}"
+        />
+    </head>
+    <body>
+        <h1>Main Page - BU Notes</h1>
+        <br />
+        <h3>Bachelors of Technology - Computer Science and Engineering</h3>
+        <h2>Bennett University, Greater Noida</h2>
+        <hr />
+        <br />
+        <div class="maintable">
+            <table>
+                <tr>
+                    <th>Semester</th>
+                    <th>Link</th>
+                </tr>
+
+                <tr>
+                    <td>One</td>
+                    <td><a href="/semone">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>Two</td>
+                    <td><a href="/semtwo">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>Three</td>
+                    <td><a href="/semthree">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>Four</td>
+                    <td><a href="/semfour">Click Here</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <footer class="site-footer">
+            <p>&copy; E23CSEU0055, E23CSEU0049</p>
+        </footer>
+    </body>
+</html>
