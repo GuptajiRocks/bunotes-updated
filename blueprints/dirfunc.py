@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, jsonify, render_template
 
 pagerts = Blueprint("pagerts", __name__)
 
@@ -10,7 +10,12 @@ def extreme_start():
 
 @pagerts.route("/semone")
 def semester_one():
-    return render_template("semone.html")
+    return jsonify(
+        {
+            "Error Message": "We're working towards adding the details of this semester to the site."
+        }
+    )
+    # return render_template("semone.html")
 
 
 @pagerts.route("/semfour")
@@ -20,9 +25,19 @@ def semester_four():
 
 @pagerts.route("/semtwo")
 def semester_two():
-    return render_template("semtwo.html")
+    return jsonify(
+        {
+            "Error Message": "We're working towards adding the details of this semester to the site."
+        }
+    )
+    # return render_template("semtwo.html")
 
 
 @pagerts.route("/semthree")
 def semester_three():
-    return render_template("semthree.html")
+    return jsonify(
+        {
+            "Error Message": "We're working towards adding the details of this semester to the site."
+        }
+    )
+    # return render_template("semthree.html")
