@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, redirect, render_template
 
 semfo = Blueprint("smfo", __name__, url_prefix="/semfour")
 
@@ -101,3 +101,41 @@ def daalecs():
     ]
 
     return render_template("foursem/daa.html", data=llistdaa)
+
+
+@semfo.route("/dmpm")
+def data_mining_and_pred_modelling():
+    llistdmpm = [
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L1.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L2.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L3.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L4.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L5_L6_Principal%20Component%20Analysis.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L7_Similarity%20Analysis.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L8_Vectorization.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L9_Association%20Rule.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L10%20Clustering.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L10_11_Regression.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L12_Confusion%20Matrix.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L13%20Decision%20Trees.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L13_14%20Model%20Selection%20and%20Prediction.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/14-15_KNN.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/16_Decision%20Trees.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/17_Naive%20Bayes%20and%20knn%20Classifiers.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/18_Support%20Vector%20Machine%20(SVM)%20-%20Copy.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/19_Outlier%20Analysis.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/20_ANOVA.ppt",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/LDA.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/Time%20Series.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/DM_Module3.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/DM_Module4.pdf",
+    ]
+
+    return render_template("foursem/dmpm.html", data=llistdmpm)
+
+
+@semfo.route("/ethics")
+def ethics_208():
+    return redirect(
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/ethics/Arihant_Arastu_Harshil_Sutejas_Samrat_Ethics_Report_CSET208_18042025.pdf"
+    )

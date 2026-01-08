@@ -4,10 +4,13 @@ from blueprints.dirfunc import pagerts
 from blueprints.semfour import semfo
 from blueprints.semone import sone
 
+# from models.db import admin
+
 app = Flask(__name__)
 app.register_blueprint(pagerts)
 app.register_blueprint(sone)
 app.register_blueprint(semfo)
+# app.register_blueprint(admin)
 
 
 # Goofy Test
