@@ -5,6 +5,8 @@ semfo = Blueprint("smfo", __name__, url_prefix="/semfour")
 
 @semfo.route("/os")
 def operating_sys_lec():
+    ppos = "OS Lectures"
+    osname = "Operating System"
     llistos = [
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/os/Lecture_1.pdf",
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/os/Lecture_2.pdf",
@@ -32,11 +34,13 @@ def operating_sys_lec():
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/os/Distributed,%20Network%20System%20and%20RPC.pptx",
     ]
 
-    return render_template("foursem/os.html", data=llistos)
+    return render_template("foursem/s4lec.html", data=llistos, title=ppos, name=osname)
 
 
 @semfo.route("/cn")
 def cnlecs():
+    ppcn = "CN Lectures"
+    cnname = "Computer Networks"
     llistcn = [
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/cn/Lecture-1.pptx",
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/cn/Lecture-2.pptx",
@@ -72,11 +76,13 @@ def cnlecs():
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/cn/Lecture-Session%20and%20Presentation.pptx",
     ]
 
-    return render_template("foursem/cn.html", data=llistcn)
+    return render_template("foursem/s4lec.html", data=llistcn, title=ppcn, name=cnname)
 
 
 @semfo.route("/daa")
 def daalecs():
+    ppdaa = "DAA Lectures"
+    daaname = "Design and Analysis of Algorithms"
     llistdaa = [
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/daa/L1_Welcome%20Lecture.pdf",
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/daa/L2-%20Complexity.pdf",
@@ -100,11 +106,15 @@ def daalecs():
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/daa/L20_complexity%20ClassesP_NP.pdf",
     ]
 
-    return render_template("foursem/daa.html", data=llistdaa)
+    return render_template(
+        "foursem/s4lec.html", data=llistdaa, title=ppdaa, name=daaname
+    )
 
 
 @semfo.route("/dmpm")
 def data_mining_and_pred_modelling():
+    ppdmpm = "DMPM Lectures"
+    dmpmname = "Data Mining and Predictive Modelling"
     llistdmpm = [
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L1.pptx",
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/L2.pptx",
@@ -131,7 +141,9 @@ def data_mining_and_pred_modelling():
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/dmpm/DM_Module4.pdf",
     ]
 
-    return render_template("foursem/dmpm.html", data=llistdmpm)
+    return render_template(
+        "foursem/s4lec.html", data=llistdmpm, title=ppdmpm, name=dmpmname
+    )
 
 
 @semfo.route("/ethics")
