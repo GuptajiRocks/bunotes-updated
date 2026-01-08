@@ -21,7 +21,7 @@ def myfunc():
 
 @app.route("/details")
 def deets():
-    return jsonify({"Apps": ["Python", "Flask"]})
+    return jsonify({"Apps": ["Python", "Flask"], "Deployment": "Vercel"})
 
 
 if __name__ == "__main__":

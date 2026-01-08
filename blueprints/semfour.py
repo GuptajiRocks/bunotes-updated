@@ -151,3 +151,18 @@ def ethics_208():
     return redirect(
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/ethics/Arihant_Arastu_Harshil_Sutejas_Samrat_Ethics_Report_CSET208_18042025.pdf"
     )
+
+
+@semfo.route("/pyq")
+def alreadypyq():
+    return redirect("https://bu4pyq.vercel.app")
+
+
+@semfo.route("/cnlab")
+def cn_labs_prac():
+    return redirect("https://github.com/GuptajiRocks/computer_networks_labs/tree/main")
+
+
+@semfo.route("/dmpmlab")
+def dmpm_labs_prac():
+    return redirect("https://github.com/GuptajiRocks/data-science-sem4/tree/main")
