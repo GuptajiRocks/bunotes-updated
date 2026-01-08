@@ -2,67 +2,89 @@
 <html>
     <head>
         <title>Semester Four</title>
-        <link
-            rel="stylesheet"
-            href="{{ url_for('static', filename='index.css') }}"
-        />
+
         <link
             rel="icon"
             type="image/x-icon"
             href="{{ url_for('static', filename='images/fav.ico') }}"
         />
+
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='index.css') }}"
+        />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
+
     <body>
-        <br />
-        <h2 class="s4head">Semester Four Subjects</h2>
-        <br />
-        <h3 class="s4head"><a href="/">Home Page</a></h3>
-        <br />
-        <hr />
-        <br />
-        <div class="maintable">
-            <table>
-                <tr>
-                    <th>Code</th>
-                    <th>Subject</th>
-                    <th>Link</th>
-                </tr>
-                <tr>
-                    <td>CSET209</td>
-                    <td>Operating Systems - Lectures</td>
-                    <td>
-                        <a href="/semfour/os" target="_blank">Click Here</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>CSET207</td>
-                    <td>Computer Networks - Lectures</td>
-                    <td>
-                        <a href="/semfour/cn" target="_blank">Click Here</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>CSET244</td>
-                    <td>Design Analysis of Algorithms - Lectures</td>
-                    <td>
-                        <a href="/semfour/daa" target="_blank">Click Here</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>CSET228</td>
-                    <td>Data Mining and Predictive Modelling - Lectures</td>
-                    <td>
-                        <a href="/semfour/dmpm" target="_blank">Click Here</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>CSET208</td>
-                    <td>Ethics Final Report</td>
-                    <td>
-                        <a href="/semfour/ethics" target="_blank">Click Here</a>
-                    </td>
-                </tr>
-            </table>
+        <div class="page">
+            <h2 class="s4head">Semester Four Subjects</h2>
+            <h3 class="s4head"><a href="/">Home Page</a></h3>
+
+            <hr />
+
+            <div class="sem-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Subject</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>CSET209</td>
+                            <td>Operating Systems - Lectures</td>
+                            <td>
+                                <a href="/semfour/os" target="_blank"
+                                    >Click Here</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CSET207</td>
+                            <td>Computer Networks - Lectures</td>
+                            <td>
+                                <a href="/semfour/cn" target="_blank"
+                                    >Click Here</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CSET244</td>
+                            <td>Design Analysis of Algorithms - Lectures</td>
+                            <td>
+                                <a href="/semfour/daa" target="_blank"
+                                    >Click Here</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CSET228</td>
+                            <td>
+                                Data Mining and Predictive Modelling - Lectures
+                            </td>
+                            <td>
+                                <a href="/semfour/dmpm" target="_blank"
+                                    >Click Here</a
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CSET208</td>
+                            <td>Ethics Final Report</td>
+                            <td>
+                                <a href="/semfour/ethics" target="_blank"
+                                    >Click Here</a
+                                >
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </body>
 </html>
