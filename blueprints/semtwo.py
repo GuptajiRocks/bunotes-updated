@@ -64,3 +64,32 @@ def linear_tut():
         backlink=backlink2,
         sems=ssname2,
     )
+
+
+@stwo.route("/java/lab")
+def java_labs():
+    javatitle = "Java Labs"
+    javatutName = "Object Oriented Programming using Java Practical Labs"
+    llistjavalab = [
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/javalab/cset109_lab00_common.odt",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/javalab/cset109_lab01_friday.odt",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/javalab/cset109_lab02_friday.docx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/javalab/cset109_lab03_friday.docx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/javalab/cset109_lab04_friday.docx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/javalab/cset109_lab05_friday.docx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/javalab/cset109_lab06_friday.docx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/javalab/cset109_lab07_swing_all.docx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/javalab/cset109_lab08_all.docx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/javalab/CSET109_Lab09_all.docx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/javalab/cset109_lab10_all.docx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/javalab/cset109_lab11_all.docx",
+    ]
+
+    return render_template(
+        "foursem/s4lec.html",
+        name=javatutName,
+        title=javatitle,
+        data=llistjavalab,
+        backlink=backlink2,
+        sems=ssname2,
+    )

@@ -85,9 +85,14 @@ def semester_two():
             "link": "/semtwo/dms/tut",
         },
         {
-            "code": "EMAT102",
+            "code": "EMAT102-T",
             "title": "Linear Algebra - Tutorials",
             "link": "/semtwo/emat102/tut",
+        },
+        {
+            "code": "CSET109-P",
+            "title": "Object Oriented Programming using Java - Practicals",
+            "link": "/semtwo/java/lab",
         },
     ]
 
