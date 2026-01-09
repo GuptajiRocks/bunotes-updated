@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, redirect, render_template
+from flask import Blueprint, redirect, render_template
 
 stwo = Blueprint("stwo", __name__, url_prefix="/semtwo")
 backlink2 = "/semtwo"
@@ -54,6 +54,22 @@ def linear_tut():
     llistemattut = [
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial-1.pdf",
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Totorial-1%20solution.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Totorial-2.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial%202%20Solution.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Totorial-3%20%204.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial%203-4%20Solutions.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial%20%205.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial%205%20solution%20.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial-6.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial%206%20solution.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial%207.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial%207%20solution.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Totorial-8.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial%208%20solution.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial%209.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial%209%20solution.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial%2010.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial%2010%20solution.pdf",
     ]
 
     return render_template(
