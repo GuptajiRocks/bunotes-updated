@@ -84,6 +84,11 @@ def semester_two():
             "title": "Discrete Mathematics - Tutorials",
             "link": "/semtwo/dms/tut",
         },
+        {
+            "code": "EMAT102",
+            "title": "Linear Algebra - Tutorials",
+            "link": "/semtwo/emat102/tut",
+        },
     ]
 
     return render_template("seml.html", semsub=s2sub, semname=twoname)

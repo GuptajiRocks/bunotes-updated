@@ -15,7 +15,7 @@ def dms_lec_all():
 @stwo.route("/dms/tut")
 def dms_tut():
     ppname = "DMS Tutorials"
-    dmsname = "Discrete Mathematical Structures"
+    dmsname = "Discrete Mathematical Structures Tutorials"
     llistdmstut = [
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/dmstut/DMS%20Tutorial%20Sheet%201.pdf",
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/dmstut/Tut%201%20solution.pdf",
@@ -42,6 +42,25 @@ def dms_tut():
         name=dmsname,
         title=ppname,
         data=llistdmstut,
+        backlink=backlink2,
+        sems=ssname2,
+    )
+
+
+@stwo.route("/emat102/tut")
+def linear_tut():
+    ppname = "LA&ODE Tutorials"
+    emattutname = "Linear Algebra and Ordinary Differential Equations Tutorials"
+    llistemattut = [
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Tutorial-1.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelatut/Totorial-1%20solution.pdf",
+    ]
+
+    return render_template(
+        "foursem/s4lec.html",
+        name=emattutname,
+        title=ppname,
+        data=llistemattut,
         backlink=backlink2,
         sems=ssname2,
     )
