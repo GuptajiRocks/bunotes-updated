@@ -94,6 +94,11 @@ def semester_two():
             "title": "Object Oriented Programming using Java - Practicals",
             "link": "/semtwo/java/lab",
         },
+        {
+            "code": "EPHY111L-M",
+            "title": "Mechanics Lectures",
+            "link": "/semtwo/ephy/mech",
+        },
     ]
 
     return render_template("seml.html", semsub=s2sub, semname=twoname)

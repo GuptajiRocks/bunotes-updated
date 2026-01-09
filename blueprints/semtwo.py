@@ -109,3 +109,31 @@ def java_labs():
         backlink=backlink2,
         sems=ssname2,
     )
+
+
+@stwo.route("/ephy/mech")
+def mechanics_lec():
+    mechtitle = "EPHY111L"
+    mechName = "Mechanics Lectures"
+    llistmech = [
+        "https://trialtwo.blob.core.windows.net/ephylec/EPHY111L_1.pdf",
+        "https://trialtwo.blob.core.windows.net/ephylec/EPHY111L_2.pdf",
+        "https://trialtwo.blob.core.windows.net/ephylec/EPHY111L_3.pdf",
+        "https://trialtwo.blob.core.windows.net/ephylec/EPHY111L_4.pdf",
+        "https://trialtwo.blob.core.windows.net/ephylec/EPHY111L_5.pdf",
+        "https://trialtwo.blob.core.windows.net/ephylec/EPHY111L_6.pdf",
+        "https://trialtwo.blob.core.windows.net/ephylec/EPHY111L_7.pdf",
+        "https://trialtwo.blob.core.windows.net/ephylec/EPHY111L_8.pdf",
+        "https://trialtwo.blob.core.windows.net/ephylec/EPHY111L_9.pdf",
+        "https://trialtwo.blob.core.windows.net/ephylec/EPHY111L_10.pdf",
+        "https://trialtwo.blob.core.windows.net/ephylec/EPHY111L_11.pdf",
+    ]
+
+    return render_template(
+        "foursem/s4lec.html",
+        name=mechName,
+        title=mechtitle,
+        data=llistmech,
+        backlink=backlink2,
+        sems=ssname2,
+    )
