@@ -2,6 +2,9 @@ from flask import Blueprint, redirect, render_template
 
 semfo = Blueprint("smfo", __name__, url_prefix="/semfour")
 
+backlink = "/semfour"
+ssnames = "4"
+
 
 @semfo.route("/os")
 def operating_sys_lec():
@@ -34,7 +37,14 @@ def operating_sys_lec():
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/os/Distributed,%20Network%20System%20and%20RPC.pptx",
     ]
 
-    return render_template("foursem/s4lec.html", data=llistos, title=ppos, name=osname)
+    return render_template(
+        "foursem/s4lec.html",
+        data=llistos,
+        title=ppos,
+        name=osname,
+        backlink=backlink,
+        sems=ssnames,
+    )
 
 
 @semfo.route("/cn")
@@ -76,7 +86,14 @@ def cnlecs():
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/cn/Lecture-Session%20and%20Presentation.pptx",
     ]
 
-    return render_template("foursem/s4lec.html", data=llistcn, title=ppcn, name=cnname)
+    return render_template(
+        "foursem/s4lec.html",
+        data=llistcn,
+        title=ppcn,
+        name=cnname,
+        backlink=backlink,
+        sems=ssnames,
+    )
 
 
 @semfo.route("/daa")
@@ -107,7 +124,12 @@ def daalecs():
     ]
 
     return render_template(
-        "foursem/s4lec.html", data=llistdaa, title=ppdaa, name=daaname
+        "foursem/s4lec.html",
+        data=llistdaa,
+        title=ppdaa,
+        name=daaname,
+        backlink=backlink,
+        sems=ssnames,
     )
 
 
@@ -147,7 +169,12 @@ def data_mining_and_pred_modelling():
     ]
 
     return render_template(
-        "foursem/s4lec.html", data=llistdmpm, title=ppdmpm, name=dmpmname
+        "foursem/s4lec.html",
+        data=llistdmpm,
+        title=ppdmpm,
+        name=dmpmname,
+        backlink=backlink,
+        sems=ssnames,
     )
 
 
@@ -193,5 +220,10 @@ def mca_assignments():
     ]
 
     return render_template(
-        "foursem/s4lec.html", title=ppmca, name=mcaname, data=llistmca
+        "foursem/s4lec.html",
+        title=ppmca,
+        name=mcaname,
+        data=llistmca,
+        backlink=backlink,
+        sems=ssnames,
     )

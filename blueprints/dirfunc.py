@@ -20,7 +20,7 @@ def semester_one():
 
 @pagerts.route("/semfour")
 def semester_four():
-    s2sub = [
+    s4sub = [
         {
             "code": "CSET209",
             "title": "Operating Systems - Lectures",
@@ -65,16 +65,34 @@ def semester_four():
         {"code": "ALL", "title": "Previous Year Questions", "link": "/semfour/pyq"},
     ]
 
-    return render_template("semfour.html", semsub=s2sub)
+    fourname = "Four"
+
+    return render_template("seml.html", semsub=s4sub, semname=fourname)
 
 
 @pagerts.route("/semtwo")
 def semester_two():
-    return jsonify(
+    twoname = "Two"
+    s2sub = [
         {
-            "Error Message": "We're working towards adding the details of this semester to the site."
-        }
-    )
+            "code": "CSET106",
+            "title": "Discrete Mathematics - Lectures",
+            "link": "/semtwo/dms",
+        },
+        {
+            "code": "CSET106-T",
+            "title": "Discrete Mathematics - Tutorials",
+            "link": "/semtwo/dms/tut",
+        },
+    ]
+
+    return render_template("seml.html", semsub=s2sub, semname=twoname)
+
+    # return jsonify(
+    #     {
+    #         "Error Message": "We're working towards adding the details of this semester to the site."
+    #     }
+    # )
     # return render_template("semtwo.html")
 
 
