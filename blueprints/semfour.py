@@ -171,3 +171,27 @@ def cn_labs_prac():
 @semfo.route("/dmpm/lab")
 def dmpm_labs_prac():
     return redirect("https://github.com/GuptajiRocks/data-science-sem4/tree/main")
+
+
+@semfo.route("/mca")
+def mca_assignments():
+    ppmca = "M&CA Assignments"
+    mcaname = "Microcontrollers and Computer Architecture"
+    llistmca = [
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/mca/Microprocessors%20And%20Microcontrollers%20-%20-%20Unit%204%20-%20Week%201.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/mca/Microprocessors%20And%20Microcontrollers%20-%20-%20Unit%205%20-%20Week%202.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/mca/Microprocessors%20And%20Microcontrollers%20-%20-%20Unit%206%20-%20Week%203.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/mca/Microprocessors%20And%20Microcontrollers%20-%20-%20Unit%207%20-%20Week%204.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/mca/Microprocessors%20And%20Microcontrollers%20-%20-%20Unit%208%20-%20Week%205.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/mca/Microprocessors%20And%20Microcontrollers%20-%20-%20Unit%209%20-%20Week%206.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/mca/Microprocessors%20And%20Microcontrollers%20-%20-%20Unit%2010%20-%20Week%207.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/mca/Microprocessors%20And%20Microcontrollers%20-%20-%20Unit%2011%20-%20Week%208.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/mca/Microprocessors%20And%20Microcontrollers%20-%20-%20Unit%2012%20-%20Week%209.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/mca/Microprocessors%20And%20Microcontrollers%20-%20-%20Unit%2013%20-%20Week%2010.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/mca/Microprocessors%20And%20Microcontrollers%20-%20-%20Unit%2014%20-%20Week%2011.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfour/mca/Microprocessors%20And%20Microcontrollers%20-%20-%20Unit%2015%20-%20Week%2012.pdf",
+    ]
+
+    return render_template(
+        "foursem/s4lec.html", title=ppmca, name=mcaname, data=llistmca
+    )

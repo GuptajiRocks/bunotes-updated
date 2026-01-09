@@ -56,6 +56,11 @@ def semester_four():
             "title": "Data Mining and Predictive Modelling - Practical",
             "link": "/semfour/dmpm/lab",
         },
+        {
+            "code": "CSET203",
+            "title": "Microcontrollers and Computer Architecture - Assignments",
+            "link": "/semfour/mca",
+        },
         {"code": "CSET208", "title": "Ethics Final Report", "link": "/semfour/ethics"},
         {"code": "ALL", "title": "Previous Year Questions", "link": "/semfour/pyq"},
     ]
