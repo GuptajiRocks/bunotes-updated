@@ -111,6 +111,11 @@ def daalecs():
     )
 
 
+@semfo.route("/daa/tut")
+def daa_tutorials():
+    return redirect("https://trialtwo.blob.core.windows.net/daattut/Tutorial.zip")
+
+
 @semfo.route("/dmpm")
 def data_mining_and_pred_modelling():
     ppdmpm = "DMPM Lectures"
@@ -163,6 +168,6 @@ def cn_labs_prac():
     return redirect("https://github.com/GuptajiRocks/computer_networks_labs/tree/main")
 
 
-@semfo.route("/dmpmlab")
+@semfo.route("/dmpm/lab")
 def dmpm_labs_prac():
     return redirect("https://github.com/GuptajiRocks/data-science-sem4/tree/main")

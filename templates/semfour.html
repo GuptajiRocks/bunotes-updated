@@ -35,82 +35,17 @@
                     </thead>
 
                     <tbody>
+                        {% for row in semsub %}
                         <tr>
-                            <td>CSET209</td>
-                            <td>Operating Systems - Lectures</td>
+                            <td>{{ row.code }}</td>
+                            <td>{{ row.title }}</td>
                             <td>
-                                <a href="/semfour/os" target="_blank"
+                                <a href="{{ row.link }}" target="_blank"
                                     >Click Here</a
                                 >
                             </td>
                         </tr>
-                        <tr>
-                            <td>CSET207</td>
-                            <td>Computer Networks - Lectures</td>
-                            <td>
-                                <a href="/semfour/cn" target="_blank"
-                                    >Click Here</a
-                                >
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>CSET207-P</td>
-                            <td>Computer Networks - Practicals</td>
-                            <td>
-                                <a href="/semfour/cnlab" target="_blank"
-                                    >Click Here</a
-                                >
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>CSET244</td>
-                            <td>Design Analysis of Algorithms - Lectures</td>
-                            <td>
-                                <a href="/semfour/daa" target="_blank"
-                                    >Click Here</a
-                                >
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>CSET228</td>
-                            <td>
-                                Data Mining and Predictive Modelling - Lectures
-                            </td>
-                            <td>
-                                <a href="/semfour/dmpm" target="_blank"
-                                    >Click Here</a
-                                >
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>CSET228-P</td>
-                            <td>
-                                Data Mining and Predictive Modelling - Practical
-                            </td>
-                            <td>
-                                <a href="/semfour/dmpmlab" target="_blank"
-                                    >Click Here</a
-                                >
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>CSET208</td>
-                            <td>Ethics Final Report</td>
-                            <td>
-                                <a href="/semfour/ethics" target="_blank"
-                                    >Click Here</a
-                                >
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>ALL</td>
-                            <td>Previous Year Questions</td>
-                            <td>
-                                <a href="/semfour/pyq" target="_blank"
-                                    >Click Here</a
-                                >
-                            </td>
-                        </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             </div>

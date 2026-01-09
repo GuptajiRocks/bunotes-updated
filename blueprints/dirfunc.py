@@ -20,7 +20,47 @@ def semester_one():
 
 @pagerts.route("/semfour")
 def semester_four():
-    return render_template("semfour.html")
+    s2sub = [
+        {
+            "code": "CSET209",
+            "title": "Operating Systems - Lectures",
+            "link": "/semfour/os",
+        },
+        {
+            "code": "CSET207",
+            "title": "Computer Networks - Lectures",
+            "link": "/semfour/cn",
+        },
+        {
+            "code": "CSET207-P",
+            "title": "Computer Networks - Practicals",
+            "link": "/semfour/cnlab",
+        },
+        {
+            "code": "CSET244",
+            "title": "Design Analysis of Algorithms - Lectures",
+            "link": "/semfour/daa",
+        },
+        {
+            "code": "CSET244-T",
+            "title": "Design Analysis of Algorithms - Tutorials",
+            "link": "/semfour/daa/tut",
+        },
+        {
+            "code": "CSET228",
+            "title": "Data Mining and Predictive Modelling - Lectures",
+            "link": "/semfour/dmpm",
+        },
+        {
+            "code": "CSET228-P",
+            "title": "Data Mining and Predictive Modelling - Practical",
+            "link": "/semfour/dmpm/lab",
+        },
+        {"code": "CSET208", "title": "Ethics Final Report", "link": "/semfour/ethics"},
+        {"code": "ALL", "title": "Previous Year Questions", "link": "/semfour/pyq"},
+    ]
+
+    return render_template("semfour.html", semsub=s2sub)
 
 
 @pagerts.route("/semtwo")
