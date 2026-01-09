@@ -7,7 +7,7 @@ ssname1 = "1"
 
 @sone.route("/cset102/lec")
 def electrical_lec():
-    electitle = "CSET102"
+    electitle = "CSET102 Lectures"
     elecName = "Introduction to Electrical and Electronics Engineering - Lectures"
     llistelec = [
         "https://trialtwo.blob.core.windows.net/cset102-lectures/01_Intro.pdf",
@@ -35,6 +35,43 @@ def electrical_lec():
         name=elecName,
         title=electitle,
         data=llistelec,
+        backlink=backlink1,
+        sems=ssname1,
+    )
+
+
+@sone.route("/cset102/tut")
+def electrical_tut():
+    electitle = "CSET102 Tuts"
+    elecName = "Introduction to Electrical and Electronics Engineering - Tutorials"
+    llistelectut = [
+        "https://trialtwo.blob.core.windows.net/cset102-tut/Tutorial_1.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut-sol/Solution_Tutorial_1.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut/Tutorial_2.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut-sol/Solution_tutorial_2.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut/Tutorial_3.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut-sol/Solution_tutorial_3.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut/Tutorial_4.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut-sol/Solution_tutorial_4.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut/Tutorial_5.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut-sol/Solution_Tutorial_5.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut/Tutorial_6.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut-sol/Solution_tutorial_6.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut/Tutorial_7.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut-sol/Tutorial_7_Solution.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut/Tutorial_8.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut-sol/Solution_Tutorial_8.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut/Tutorial_9.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut-sol/Tutorial_9_solutions.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut/Tutorial_10.pdf",
+        "https://trialtwo.blob.core.windows.net/cset102-tut-sol/Tutorial_10_solutions.pdf",
+    ]
+
+    return render_template(
+        "foursem/s4lec.html",
+        name=elecName,
+        title=electitle,
+        data=llistelectut,
         backlink=backlink1,
         sems=ssname1,
     )

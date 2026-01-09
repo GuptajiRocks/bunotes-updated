@@ -16,7 +16,12 @@ def semester_one():
             "code": "CSET102",
             "title": "Intro to Electrical and Electronics Engineering - Lectures",
             "link": "/semone/cset102/lec",
-        }
+        },
+        {
+            "code": "CSET102-T",
+            "title": "Intro to Electrical and Electronics Engineering - Tutorials",
+            "link": "/semone/cset102/tut",
+        },
     ]
     return render_template("seml.html", semsub=s1sub, semname=onename)
     # return jsonify(
@@ -112,6 +117,11 @@ def semester_two():
             "code": "CSET102",
             "title": "Intro to Electrical and Electronics Engineering - Lectures",
             "link": "/semone/cset102/lec",
+        },
+        {
+            "code": "CSET102-T",
+            "title": "Intro to Electrical and Electronics Engineering - Tutorials",
+            "link": "/semone/cset102/tut",
         },
     ]
 
