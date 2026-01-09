@@ -10,11 +10,20 @@ def extreme_start():
 
 @pagerts.route("/semone")
 def semester_one():
-    return jsonify(
+    onename = "One"
+    s1sub = [
         {
-            "Error Message": "We're working towards adding the details of this semester to the site."
+            "code": "CSET102",
+            "title": "Intro to Electrical and Electronics Engineering - Lectures",
+            "link": "/semone/cset102/lec",
         }
-    )
+    ]
+    return render_template("seml.html", semsub=s1sub, semname=onename)
+    # return jsonify(
+    #     {
+    #         "Error Message": "We're working towards adding the details of this semester to the site."
+    #     }
+    # )
     # return render_template("semone.html")
 
 
@@ -98,6 +107,11 @@ def semester_two():
             "code": "EPHY111L-M",
             "title": "Mechanics Lectures",
             "link": "/semtwo/ephy/mech",
+        },
+        {
+            "code": "CSET102",
+            "title": "Intro to Electrical and Electronics Engineering - Lectures",
+            "link": "/semone/cset102/lec",
         },
     ]
 
