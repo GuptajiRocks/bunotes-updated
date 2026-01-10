@@ -137,3 +137,10 @@ def mechanics_lec():
         backlink=backlink2,
         sems=ssname2,
     )
+
+
+@stwo.route("/emat102/lec")
+def linear_vinay_sir_lec():
+    return redirect(
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelalec/Vinay_Sir_LA_ODE.zip"
+    )

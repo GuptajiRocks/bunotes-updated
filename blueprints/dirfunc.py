@@ -99,6 +99,11 @@ def semester_two():
             "link": "/semtwo/dms/tut",
         },
         {
+            "code": "EMAT102",
+            "title": "Linear Algebra - Notes - Dr. Vinay Shukla",
+            "link": "/semtwo/emat102/lec",
+        },
+        {
             "code": "EMAT102-T",
             "title": "Linear Algebra - Tutorials",
             "link": "/semtwo/emat102/tut",
@@ -112,6 +117,11 @@ def semester_two():
             "code": "EPHY111L-M",
             "title": "Mechanics Lectures",
             "link": "/semtwo/ephy/mech",
+        },
+        {
+            "code": "EPHY111L-E",
+            "title": "Electromagnetism Lectures",
+            "link": "/semtwo/ephy/electro",
         },
         {
             "code": "CSET102",
