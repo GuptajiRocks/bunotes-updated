@@ -150,6 +150,6 @@ def linear_vinay_sir_lec():
 def electromagnetism_lec():
     return jsonify(
         {
-            "We're working to add Electromagnemtism PPT's to the site, thanks for your patience."
+            "Message": "We're working to add Electromagnemtism PPT's to the site, thanks for your patience."
         }
     )
