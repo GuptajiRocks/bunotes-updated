@@ -1,4 +1,4 @@
-from flask import Blueprint, redirect, render_template
+from flask import Blueprint, jsonify, redirect, render_template
 
 stwo = Blueprint("stwo", __name__, url_prefix="/semtwo")
 backlink2 = "/semtwo"
@@ -143,4 +143,13 @@ def mechanics_lec():
 def linear_vinay_sir_lec():
     return redirect(
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/odelalec/Vinay_Sir_LA_ODE.zip"
+    )
+
+
+@stwo.route("/ephy/electro")
+def electromagnetism_lec():
+    return jsonify(
+        {
+            "We're working to add Electromagnemtism PPT's to the site, thanks for your patience."
+        }
     )
