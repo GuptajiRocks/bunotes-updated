@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 
 from blueprints.dirfunc import pagerts
 from blueprints.semfour import semfo
@@ -13,6 +13,17 @@ app.register_blueprint(sone)
 app.register_blueprint(semfo)
 app.register_blueprint(stwo)
 # app.register_blueprint(admin)
+
+
+@app.route("/")
+def index_page():
+    semesters = [
+        {"num": "One", "link": "/semone"},
+        {"num": "Two", "link": "/semtwo"},
+        {"num": "Three", "link": "/semthree"},
+        {"num": "Four", "link": "/semfour"},
+    ]
+    return render_template("index.html", semlist=semesters)
 
 
 # Goofy Test

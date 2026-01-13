@@ -35,22 +35,12 @@
                     </thead>
 
                     <tbody>
+                        {% for sems in semlist %}
                         <tr>
-                            <td>One</td>
-                            <td><a href="/semone">Click Here</a></td>
+                            <td>{{ sems.num }}</td>
+                            <td><a href="{{ sems.link }}">Click Here</a></td>
                         </tr>
-                        <tr>
-                            <td>Two</td>
-                            <td><a href="/semtwo">Click Here</a></td>
-                        </tr>
-                        <tr>
-                            <td>Three</td>
-                            <td><a href="/semthree">Click Here</a></td>
-                        </tr>
-                        <tr>
-                            <td>Four</td>
-                            <td><a href="/semfour">Click Here</a></td>
-                        </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             </div>

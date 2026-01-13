@@ -3,11 +3,6 @@ from flask import Blueprint, jsonify, render_template
 pagerts = Blueprint("pagerts", __name__)
 
 
-@pagerts.route("/")
-def extreme_start():
-    return render_template("index.html")
-
-
 @pagerts.route("/semone")
 def semester_one():
     onename = "One"
