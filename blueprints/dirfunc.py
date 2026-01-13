@@ -22,6 +22,16 @@ def semester_one():
             "title": "Intro to Electrical and Electronics Engineering - Tutorials",
             "link": "/semone/cset102/tut",
         },
+        {
+            "code": "EPHY111L-E",
+            "title": "Electromagnetism Lectures",
+            "link": "/semtwo/ephy/electro",
+        },
+        {
+            "code": "EPHY111L-M",
+            "title": "Mechanics Lectures",
+            "link": "/semtwo/ephy/mech",
+        },
     ]
     return render_template("seml.html", semsub=s1sub, semname=onename)
     # return jsonify(

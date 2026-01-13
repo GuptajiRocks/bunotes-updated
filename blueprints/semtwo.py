@@ -113,7 +113,7 @@ def java_labs():
 
 @stwo.route("/ephy/mech")
 def mechanics_lec():
-    mechtitle = "EPHY111L"
+    mechtitle = "EPHY111L Mechanics"
     mechName = "Mechanics Lectures"
     llistmech = [
         "https://trialtwo.blob.core.windows.net/ephylec/EPHY111L_1.pdf",
@@ -148,8 +148,29 @@ def linear_vinay_sir_lec():
 
 @stwo.route("/ephy/electro")
 def electromagnetism_lec():
-    return jsonify(
-        {
-            "Message": "We're working to add Electromagnemtism PPT's to the site, thanks for your patience."
-        }
+    electrotitle = "EPHY111L Electromagnetism"
+    electroName = "Electromagnetism Lectures"
+
+    llistelectro = [
+        "https://trialtwo.blob.core.windows.net/ephymlec/EPHY111L_lecture14-17.pdf",
+        "https://trialtwo.blob.core.windows.net/ephymlec/EPHY111L_lecture18.pdf",
+        "https://trialtwo.blob.core.windows.net/ephymlec/EPHY111L_lecture19.pdf",
+        "https://trialtwo.blob.core.windows.net/ephymlec/EPHY111L_lecture20.pdf",
+        "https://trialtwo.blob.core.windows.net/ephymlec/EPHY111L_lecture21.pdf",
+        "https://trialtwo.blob.core.windows.net/ephymlec/EPHY111L_lecture22.pdf",
+        "https://trialtwo.blob.core.windows.net/ephymlec/EPHY111L_lecture23.pdf",
+        "https://trialtwo.blob.core.windows.net/ephymlec/EPHY111L_lecture24-25.pdf",
+        "https://trialtwo.blob.core.windows.net/ephymlec/EPHY111L_lecture26.pdf",
+        "https://trialtwo.blob.core.windows.net/ephymlec/EPHY111L_lecture27.pdf",
+        "https://trialtwo.blob.core.windows.net/ephymlec/EPHY111L_lecture28.pdf",
+        "https://trialtwo.blob.core.windows.net/ephymlec/EPHY111L_lecture29.pdf",
+    ]
+
+    return render_template(
+        "foursem/s4lec.html",
+        name=electroName,
+        title=electrotitle,
+        data=llistelectro,
+        backlink=backlink2,
+        sems=ssname2,
     )
