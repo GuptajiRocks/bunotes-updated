@@ -91,22 +91,6 @@ The parameters accepted by the foursem/s4lec.html file are as follows:
    These are the two variables which are preferred to be declared globally rather than a local scope as they remain unchanged and are utilized in every function.  
    - backlink refers the route which takes the user back to the semester page from the S3 bucket link list page.  
    - sems define the name of the Semester which is being displayed, more specifically the number.
-
-# How the application works with respect to different modules
-  1. app.py -> This is the main file, where the index route lies, wherein lies the list of semesters available on the portal. If any changes to be made then add the semester and its respective route in the following format: "/sem<number>" like for Semester Five = "/semfive". and so on.
-  
-  2. dirfunc.py -> This is the file that contains details of subjects within a semester. To add a subject you wish to add within a semester, create a list dictionary data structure and namely add three details in that. code, title and link. code is the subject code, title is the subject name you wish to add and link is the route of that subject.
-  Let's suppose you wish to add The practical files of CSET109, Java, and the route would be /semtwo/java/labs. Ensure this same format within every addition to maintain code modularity and easy understanding for contributors. The template file for this python module is seml.html. The seml.html file already has the jinja2 templating set in it to display the subjects effectively. You are encourage not to touch that file unless and until a more effective templating solution has come to your mind.
-  
-  3. sem<name>.py -> In this file lies the routes for each respective semester subject and the lecture/tutorials/labs within them. To add resources of your own within this follow the steps:
-    a. Create a Supabase organization, within that create a project and navigate to storage. Ensure that S3 config is selected and create a bucket. Upload your respective files in your bucket and ensure that the account is kept active so that the bucket never goes offline.
-    b. Select the subject resources you want to add and navigate to its semester route if it already exists, if not create one with appropriate function names and use that. The template being followed to send individual resources within the subject specific and type specific route is w.r.t foursem/sem4lec.html.
-    c. This is the file that has the jinja2 templates with looping done over the list dictionary data structure that is passes to the data variable. If you will observe the foursem/sem4lec.html file, you will see I have already assigned dyanmic template variables to the file. The code follows a modular structure with each semester, subject following the same format of display. So the parameters accepted by the foursem/s4lec.html file are as follows:
-        1. name = Its the name of the subject along with the lecture/practical/tutorial significance.
-        2. title = This is the title of the webpage, used to signify the tab name (title duh)
-        3. data = this is the list data structure used to store the links of the files within the S3 bucket of the specific course being added.
-        4. backlink and sems, these are the two variables which are preferred to be declared globally rather than a local scope as they remain unchanged and are utilized in every function. backlink refers the route which takes the user back to the semester page from the S3 bucket link list page. sems define the name of the Semester which is being displayed, more specifically the number.
-  
   
   
 # List of Available Routes (Notes)
