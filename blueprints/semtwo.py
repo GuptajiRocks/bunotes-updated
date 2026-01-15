@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, redirect, render_template
+from flask import Blueprint, redirect, render_template
 
 stwo = Blueprint("stwo", __name__, url_prefix="/semtwo")
 backlink2 = "/semtwo"
