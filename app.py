@@ -23,7 +23,9 @@ def index_page():
         {"num": "Three", "link": "/semthree"},
         {"num": "Four", "link": "/semfour"},
     ]
-    return render_template("index.html", semlist=semesters)
+
+    contrilink = "https://github.com/GuptajiRocks/bunotes-updated"
+    return render_template("index.html", semlist=semesters, gitlink=contrilink)
 
 
 # Goofy Test
