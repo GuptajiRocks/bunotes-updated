@@ -158,3 +158,26 @@ def semester_three():
         }
     )
     # return render_template("semthree.html")
+
+
+@pagerts.route("/semfive")
+def semester_five():
+    return jsonify(
+        {
+            "Error Message": "We're working towards adding the details of this semester to the site."
+        }
+    )
+
+
+@pagerts.route("/semsix")
+def semester_six():
+    sixname = "Six"
+    s6sub = [
+        {
+            "code": "noc26-cs10",
+            "title": "NPTEL - AI for Management",
+            "link": "/semsix/noc26-cs10/assign",
+        }
+    ]
+
+    return render_template("seml.html", semsub=s6sub, semname=sixname)

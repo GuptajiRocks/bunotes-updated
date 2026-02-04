@@ -3,6 +3,7 @@ from flask import Flask, jsonify, render_template
 from blueprints.dirfunc import pagerts
 from blueprints.semfour import semfo
 from blueprints.semone import sone
+from blueprints.semsix import semsixes
 from blueprints.semtwo import stwo
 
 # from models.db import admin
@@ -12,6 +13,7 @@ app.register_blueprint(pagerts)
 app.register_blueprint(sone)
 app.register_blueprint(semfo)
 app.register_blueprint(stwo)
+app.register_blueprint(semsixes)
 # app.register_blueprint(admin)
 
 
@@ -22,6 +24,8 @@ def index_page():
         {"num": "Two", "link": "/semtwo"},
         {"num": "Three", "link": "/semthree"},
         {"num": "Four", "link": "/semfour"},
+        {"num": "Five", "link": "/semfive"},
+        {"num": "Six", "link": "/semsix"},
     ]
 
     contrilink = "https://github.com/GuptajiRocks/bunotes-updated"
