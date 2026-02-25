@@ -13,6 +13,8 @@ def ai_for_management_assignments():
     llistaim = [
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semsix/aiformgmt/Artificial%20Intelligence%20(AI)%20for%20Management%20-%20-%20Unit%203%20-%20Week%201.pdf",
         "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semsix/aiformgmt/Artificial%20Intelligence%20(AI)%20for%20Management%20-%20-%20Unit%204%20-%20Week%202.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semsix/aiformgmt/Artificial%20Intelligence%20(AI)%20for%20Management%20-%20-%20Unit%205%20-%20Week%203.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semsix/aiformgmt/Artificial%20Intelligence%20(AI)%20for%20Management%20-%20-%20Unit%206%20-%20Week%204.pdf",
     ]
 
     return render_template(
