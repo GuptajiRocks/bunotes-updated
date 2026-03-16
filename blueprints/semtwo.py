@@ -174,3 +174,31 @@ def electromagnetism_lec():
         backlink=backlink2,
         sems=ssname2,
     )
+
+
+@stwo.route("/dd/lec")
+def digital_d_lectures():
+    ddtitle = "CSET105 Digital Design"
+    ddname = "Digital Design Lectures"
+    llistddlec = [
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/ddlec/L1_Binary%20Arithmatic%20and%20Complements.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/ddlec/L1_Binary%20Arithmatic%20and%20Complements.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/ddlec/L2_Comp%20Sub%20and%20No.%20Representation.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/ddlec/L3_Binary%20codes.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/ddlec/BOOLEAN_ALGEBRA.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/ddlec/GATE_LEVEL_MINIMIZATION.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/ddlec/DLD%20MODULE-2%20PPT_Combinational%20Circuits_A.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/ddlec/BOOLEAN_ALGEBRA.pdf",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/ddlec/MODULE-2%20PPT_Combinational%20Circuits.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/ddlec/MODULE-3%20PPT.pptx",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semtwo/ddlec/MODULE-3,4%20Complete%20PPT.pptx",
+    ]
+
+    return render_template(
+        "foursem/s4lec.html",
+        name=ddname,
+        title=ddtitle,
+        data=llistddlec,
+        backlink=backlink2,
+        sems=ssname2,
+    )

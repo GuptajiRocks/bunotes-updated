@@ -138,6 +138,11 @@ def semester_two():
             "title": "Intro to Electrical and Electronics Engineering - Tutorials",
             "link": "/semone/cset102/tut",
         },
+        {
+            "code": "CSET105-L",
+            "title": "Digital Design - Lectures",
+            "link": "/semtwo/dd/lec",
+        },
     ]
 
     return render_template("seml.html", semsub=s2sub, semname=twoname)
