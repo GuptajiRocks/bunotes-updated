@@ -167,11 +167,15 @@ def semester_three():
 
 @pagerts.route("/semfive")
 def semester_five():
-    return jsonify(
+    fivename = "Five"
+    s5sub = [
         {
-            "Error Message": "We're working towards adding the details of this semester to the site."
+            "code": "CSET301",
+            "title": "AI&ML - Lectures",
+            "link": "/semfive/cset301/lec",
         }
-    )
+    ]
+    return render_template("seml.html", semsub=s5sub, semname=fivename)
 
 
 @pagerts.route("/semsix")
