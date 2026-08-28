@@ -173,7 +173,17 @@ def semester_five():
             "code": "CSET301",
             "title": "AI&ML - Lectures",
             "link": "/semfive/cset301/lec",
-        }
+        },
+        {
+            "code": "CSET381",
+            "title": "CSET381 - Lectures (Unit 1)",
+            "link": "/semfive/cset381/lec",
+        },
+        {
+            "code": "CSET381-U2",
+            "title": "CSET381 - Lectures (Unit 2)",
+            "link": "/semfive/cset381/unit2",
+        },
     ]
     return render_template("seml.html", semsub=s5sub, semname=fivename)
 
