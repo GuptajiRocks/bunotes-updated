@@ -190,3 +190,42 @@ def cset305_lectures():
         backlink=backlink,
         sems=ssnames,
     )
+
+
+@semfi.route("/cset324/lec")
+def cset324_lectures():
+    ppsample = "CSET324 - Lectures"
+    samplename = "Software Project Management"
+    llistsample = [
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfive/cset324-lec/Merged%20SPM%20All.pdf",
+    ]
+
+    return render_template(
+        "foursem/s4lec.html",
+        data=llistsample,
+        title=ppsample,
+        name=samplename,
+        backlink=backlink,
+        sems=ssnames,
+    )
+
+
+@semfi.route("/cset369/lec")
+def cset369_lectures():
+    ppsample = "CSET369 - Lectures"
+    samplename = "Time Series Analysis"
+    llistsample = [
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfive/cset369-lec/Module%201%20PPT-20251129.zip",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfive/cset369-lec/Module%202-20251129.zip",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfive/cset369-lec/Module%203-20251129.zip",
+        "https://mstytecrjnvpktdawjjr.supabase.co/storage/v1/object/public/semfive/cset369-lec/Module%204-20251201.zip",
+    ]
+
+    return render_template(
+        "foursem/s4lec.html",
+        data=llistsample,
+        title=ppsample,
+        name=samplename,
+        backlink=backlink,
+        sems=ssnames,
+    )

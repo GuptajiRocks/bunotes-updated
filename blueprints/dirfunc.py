@@ -185,6 +185,16 @@ def semester_five():
             "link": "/semfive/cset305/lec",
         },
         {
+            "code": "CSET324",
+            "title": "Software Project Management - Lectures",
+            "link": "/semfive/cset324/lec",
+        },
+        {
+            "code": "CSET369",
+            "title": "Time Series Analysis - Lectures",
+            "link": "/semfive/cset369/lec",
+        },
+        {
             "code": "CSET381",
             "title": "CSET381 - Lectures (Unit 1)",
             "link": "/semfive/cset381/lec",
