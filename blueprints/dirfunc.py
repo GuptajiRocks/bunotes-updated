@@ -175,6 +175,16 @@ def semester_five():
             "link": "/semfive/cset301/lec",
         },
         {
+            "code": "CSET302",
+            "title": "Automata Theory and Computability - Lectures",
+            "link": "/semfive/cset302/lec",
+        },
+        {
+            "code": "CSET305",
+            "title": "High Performance Computing - Lectures",
+            "link": "/semfive/cset305/lec",
+        },
+        {
             "code": "CSET381",
             "title": "CSET381 - Lectures (Unit 1)",
             "link": "/semfive/cset381/lec",
